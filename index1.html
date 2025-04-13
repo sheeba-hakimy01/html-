@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Recipe Book</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="add-recipe.html">Add Recipe</a> |
+      <a href="recipe-list.html">Recipe List</a>
+    </nav>
+    <h1>Welcome to My Recipe Book</h1>
+    <p>Explore delicious recipes for every occasion!</p>
+  </header>
+
+  <section>
+    <h2>Recipe of the Day: Chocolate Cake</h2>
+    <p>A rich and moist chocolate cake that's perfect for any celebration.</p>
+    <img src="https://www.google.com/imgres?q=chocolate%20cake&imgurl=https%3A%2F%2Fassets.epicurious.com%2Fphotos%2F61f4370abf67bb5e52649829%2F2%3A3%2Fw_3068%2Ch_4602%2Cc_limit%2FDoubleDhocolateLayerCake_RECIPE_012622_26397.jpg&imgrefurl=https%3A%2F%2Fwww.epicurious.com%2Frecipes%2Ffood%2Fviews%2Fdouble-chocolate-layer-cake-101275&docid=HKn76WxeytZAyM&tbnid=3pVd0AHj7oFtJM&vet=12ahUKEwiJr_Xjs9WMAxVCGBAIHTCJF0QQM3oECGcQAA..i&w=3068&h=4602&hcb=2&ved=2ahUKEwiJr_Xjs9WMAxVCGBAIHTCJF0QQM3oECGcQAA" alt="Chocolate Cake">
+    <p><a href="recipe-details.html">View Full Recipe</a></p>
+  </section>
+
+  <section>
+    <h3>Featured Categories</h3>
+    <ul>
+      <li><a href="recipe-list.html#desserts">Desserts</a></li>
+      <li><a href="recipe-list.html#vegan">Cola</a></li>
+      <li><a href="recipe-list.html#quick">Quick Meals</a></li>
+    </ul>
+  </section>
+</body>
+</html>
+🔹 add-recipe.html (Add Recipe Page)
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add a Recipe</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="add-recipe.html">Add Recipe</a> |
+      <a href="recipe-list.html">Recipe List</a>
+    </nav>
+    <h1>Add a New Recipe</h1>
+  </header>
+
+  <form>
+    <label>Recipe Name:<br>
+      <input type="text" name="name" required>
+    </label><br><br>
+
+    <label>Ingredients:<br>
+      <textarea name="ingredients" rows="5" required></textarea>
+    </label><br><br>
+
+    <label>Cooking Instructions:<br>
+      <textarea name="instructions" rows="5" required></textarea>
+    </label><br><br>
+
+    <label>Image URL:<br>
+      <input type="url" name="image" required>
+    </label><br><br>
+
+    <label>Category:<br>
+      <select name="category" required>
+        <option value="">Select</option>
+        <option value="Desserts">Desserts</option>
+        <option value="Appetizers">Appetizers</option>
+        <option value="cola">Vegan</option>
+      </select>
+    </label><br><br>
+
+    <button type="submit">Add Recipe</button>
+  </form>
+</body>
+</html>
+🔹 recipe-list.html (Recipe List Page)
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe List</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="add-recipe.html">Add Recipe</a> |
+      <a href="recipe-list.html">Recipe List</a>
+    </nav>
+    <h1>All Recipes</h1>
+  </header>
+
+  <section>
+    <label>Filter by Category:
+      <select>
+        <option value="all">All</option>
+        <option value="desserts">Desserts</option>
+        <option value="cola">Cola</option>
+        <option value="quick">Quick Meals</option>
+      </select>
+    </label>
+  </section>
+
+  <section>
+    <article>
+      <h2>Chocolate Cake</h2>
+      <img src="https://www.google.com/imgres?q=chocolate%20cake&imgurl=https%3A%2F%2Fscientificallysweet.com%2Fwp-content%2Fuploads%2F2020%2F09%2FIMG_4117-feature.jpg&imgrefurl=https%3A%2F%2Fscientificallysweet.com%2Fthe-best-moist-chocolate-cake%2F&docid=_4ZIdm4Fc76rSM&tbnid=WJqsjZKy5luB_M&vet=12ahUKEwiJr_Xjs9WMAxVCGBAIHTCJF0QQM3oECDUQAA..i&w=1200&h=1200&hcb=2&itg=1&ved=2ahUKEwiJr_Xjs9WMAxVCGBAIHTCJF0QQM3oECDUQAA" alt="Chocolate Cake">
+      <p>A rich, moist chocolate cake.</p>
+      <a href="recipe-details.html">View Details</a>
+    </article>
+
+    <!-- Add more recipe articles here -->
+  </section>
+</body>
+</html>
+🔹 recipe-details.html (Recipe Details Page)
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chocolate Cake Recipe</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="add-recipe.html">Add Recipe</a> |
+      <a href="recipe-list.html">Recipe List</a>
+    </nav>
+    <h1>Chocolate Cake</h1>
+  </header>
+
+  <img src="https://www.google.com/imgres?q=photo%20of%20how%20to%20prepare%20chocolate%20cake&imgurl=https%3A%2F%2Faclassictwist.com%2Fwp-content%2Fuploads%2F2018%2F05%2Fhow-to-make-one-bowl-chocolate-cake.jpg&imgrefurl=https%3A%2F%2Faclassictwist.com%2Fhow-to-make-one-bowl-chocolate-cake%2F&docid=CTIXWZ1oOnO4cM&tbnid=gF_Hd0Of9w7yuM&vet=12ahUKEwjzw8GSttWMAxW9JBAIHa7ZMwoQM3oECGwQAA..i&w=700&h=1200&hcb=2&ved=2ahUKEwjzw8GSttWMAxW9JBAIHa7ZMwoQM3oECGwQAA" alt="Chocolate Cake">
+
+  <section>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>2 cups flour</li>
+      <li>1 cup sugar</li>
+      <li>1 cup cocoa powder</li>
+      <li>2 eggs</li>
+      <li>1 cup milk</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Instructions</h2>
+    <ol>
+      <li>Preheat oven to 200°F .</li>
+      <li>Mix dry ingredients together.</li>
+      <li>Add eggs and milk. Stir until smooth.</li>
+      <li>Pour into baking pan.</li>
+      <li>Bake for25–30 minutes.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>Submitted by: Sheeba Hakimy</p>
+  </footer>
+</body>
+</html>
